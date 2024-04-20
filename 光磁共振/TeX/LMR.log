@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.4)  20 APR 2024 19:41
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.4)  20 APR 2024 22:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -508,7 +508,11 @@ File: fig/fig5.pdf Graphic file (type pdf)
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 158.
 
-[7]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 178.
+
+[7] [8]
 File: img/++1.jpg Graphic file (type bmp)
 <img/++1.jpg>
 File: img/++2.jpg Graphic file (type bmp)
@@ -521,17 +525,17 @@ File: img/--1.jpg Graphic file (type bmp)
 <img/--1.jpg>
 File: img/--2.jpg Graphic file (type bmp)
 <img/--2.jpg>
- (./LMR.bbl [8] [9]) [10] (./LMR.aux)
+ (./LMR.bbl) [9] [10] (./LMR.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 10562 strings out of 474772
- 264498 string characters out of 5761269
+ 10564 strings out of 474772
+ 264514 string characters out of 5761269
  1965842 words of memory out of 5000000
- 32538 multiletter control sequences out of 15000+600000
+ 32540 multiletter control sequences out of 15000+600000
  573004 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,15n,97p,1299b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s

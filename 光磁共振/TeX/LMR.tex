@@ -144,7 +144,7 @@ I = \frac{g_J - g_F}{2g_F}\label{eq6}
 光磁共振实验还可以采用固定射频频率而调节水平磁场的方法(称为调场法)进行。从(\ref{eq4})式可以看出，当射频频率$\nu$不变时，水平方向总磁场$|B|$与$|g_F|$成反比，因此$|B|$大的为$^{85}$Rb的共振信号，$|B|$小的为$^{87}$Rb的共振信号。还要注意的是，因为三角波扫场的波峰和波谷处的磁感应强度不同，故对每一同位素将分别在波峰和波谷处观察到不同频率的磁共振信号。
 \end{enumerate}
 \subsection{测定地磁场的水平分量$B_{\text{地水平}}$和倾角$\theta$}
-本实验装置实际上是一台铷原子磁强计，可以利用射频磁共振关系(\ref{eq4})式，由实验上测定的$\nu$和$|g_F|$来确定水平方向总磁场$|B|$。跟测$g_F$得分方法类似，先使扫场$\bm{B}_{\text{扫}}$和水平磁场$\bm{B}_{\text{水平}}$与地磁场水平分量$\bm{B}_{\text{地水平}}$方向相同，测得射频共振频率$\nu_1$，对应有$h\nu_1 = |g_F|\mu_BB_1 = |g_F|\mu_B(B_{\text{水平}} + B_{\text{扫}} + B_{\text{地水平}})$。为了测$B_{\text{地水平}}$，要消除$\bm{B}_{\text{水平}}$和$\bm{B}_{\text{扫}}$的影响，于是同时改变水平磁场$\bm{B}_{\text{水平}}$和扫场$\bm{B}_{\text{扫}}$的方向，使之跟地磁场水平分量$\bm{B}_{\text{地水平}}$的方向相反，测得射频共振频率$\nu_3$，有$h\nu_3 = |g_F|\mu_BB_3 = |g_F|\mu_B(B_{\text{水平}} + B_{\text{扫}} - B_{\text{地水平}})$，两式相减，得到$B_{\text{地水平}} = \frac{h\nu}{\mu_B|g_F|}$，其中跟$B_{\text{地水平}}$相对应的频率$\nu = \frac{v\nu_1 - \nu_3}{2}$，而$|g_F|$已在前面测得，这样便消除了扫场和水平场的影响，从而得到地磁场的大小和方向：
+本实验装置实际上是一台铷原子磁强计，可以利用射频磁共振关系(\ref{eq4})式，由实验上测定的$\nu$和$|g_F|$来确定水平方向总磁场$|B|$。跟测$g_F$得分方法类似，先使扫场$\bm{B}_{\text{扫}}$和水平磁场$\bm{B}_{\text{水平}}$与地磁场水平分量$\bm{B}_{\text{地水平}}$方向相同，测得射频共振频率$\nu_1$，对应有$h\nu_1 = |g_F|\mu_BB_1 = |g_F|\mu_B(B_{\text{水平}} + B_{\text{扫}} + B_{\text{地水平}})$。为了测$B_{\text{地水平}}$，要消除$\bm{B}_{\text{水平}}$和$\bm{B}_{\text{扫}}$的影响，于是同时改变水平磁场$\bm{B}_{\text{水平}}$和扫场$\bm{B}_{\text{扫}}$的方向，使之跟地磁场水平分量$\bm{B}_{\text{地水平}}$的方向相反，测得射频共振频率$\nu_3$，有$h\nu_3 = |g_F|\mu_BB_3 = |g_F|\mu_B(B_{\text{水平}} + B_{\text{扫}} - B_{\text{地水平}})$，两式相减，得到$B_{\text{地水平}} = \frac{h\nu}{\mu_B|g_F|}$，其中跟$B_{\text{地水平}}$相对应的频率$\nu = \frac{\nu_1 - \nu_3}{2}$，而$|g_F|$已在前面测得，这样便消除了扫场和水平场的影响，从而得到地磁场的大小和方向：
 \begin{eqnarray}
 B_{\text{地}} &=& \sqrt{B^2_{\text{地水平}} + B^2_{\text{地垂直}}}\label{eq7}\\
 \tan\theta &=& \frac{B_{\text{地垂直}}}{B_{\text{地水平}}}\label{eq8}
@@ -153,41 +153,74 @@ B_{\text{地}} &=& \sqrt{B^2_{\text{地水平}} + B^2_{\text{地垂直}}}\label{
 
 \section{实验数据}
 \subsection{地磁场的垂直分量$B_{\text{地垂直}}$}
-在机器上的“垂直”按钮处于未按下状态，$I_{\text{垂直}} = 0.086A$时，垂直方向的磁场与地磁场大小刚好完全抵消。此时，根据式\ref{eq10}可算得，地磁场的垂直分量$B_{\text{地垂直}} = 2.527\times 10^{-5} T$
+在机器上的“垂直”按钮处于未按下状态，$I_{\text{垂直}} = 0.086\text{A}$时，垂直方向的磁场与地磁场大小刚好完全抵消。此时，根据式\ref{eq10}可算得，地磁场的垂直分量$B_{\text{地垂直}} = 2.527\times 10^{-5}  \text{T}$。
 \subsection{铷原子的参数：基态的朗德因子$g_F$和核自旋量子数$I$}
 \begin{table}[]
-    \begin{tabular}{lllll}
-    组别                   & 次别 & 共振频率$\mu$ & 电流I & 磁感应强度B \\
-    \multirow{2}{*}{++组} & 1  &         &     &        \\
-                         & 2  &         &     &        \\
-    \multirow{2}{*}{-+组} & 1  &         &     &        \\
-                         & 2  &         &     &        \\
-    \multirow{2}{*}{--组} & 1  &         &     &        \\
-                         & 2  &         &     &       
-    \end{tabular}
-    \end{table}
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+组别    &次别   &共振频率$\mu$/kHz &电流$I$/A   &磁感应强度B/$\times 10^{-4}$T\\   \hline
+\multirow{2}{*}{＋＋组} 
+&1    &1557.6   &0.503  &2.313  \\  \cline{2-5}
+&2    &2295.2   &0.503  &2.313  \\  \hline
+\multirow{2}{*}{－＋组} 
+&1    &808.76   &0.509  &2.341  \\  \cline{2-5}
+&2    &1174.5   &0.509  &2.341  \\  \hline
+\multirow{2}{*}{－－组} 
+&1    &1363.3   &0.503  &2.313  \\  \cline{2-5}
+&2    &2132.3   &0.504  &2.317  \\  \hline
+\end{tabular}
+\caption{实验数据测得的共振频率$\mu$和电流$I$}\label{table2}
+\end{table}
 
-\section{误差分析}
+
+利用＋＋组和－＋组的数据，可以计算得出$^{85}$Rb和$^{87}$Rb的$|g_F|$和$I$如表\ref{table3}所示。
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+            &$g_\text{F实验}$    &$g_\text{F理论}$ &相对误差   &$I_\text{实验}$  &$I_\text{理论}$  &相对误差   \\\hline
+$^{85}$Rb   &0.3629              &0.3333           &8.88\%     &2.255           &2.5    &-9.80\%    \\ \hline
+$^{87}$Rb   &0.5322              &0.5000           &6.44\%     &1.379           &1.5    &-8.07\%    \\ \hline
+\end{tabular}
+\caption{朗德因子$g_F$和核自旋量子数$I$}\label{table3}
+\end{table}
+
+\subsection{地磁场的水平分量$B_{\text{地水平}}$和倾角$\theta$}
+利用＋＋组和－－组的数据，分别利用$^{85}$Rb和$^{87}$Rb的$g_F$，可以计算得出$B_{\text{地水平}} = 1.911\times 10^{-5}\text{T}$和$B_{\text{地水平}} = 1.092\times 10^{-5}\text{T}$，取平均值，最终得到$B_{\text{地水平}} = 1.502\times 10^{-5}\text{T}$。
+
+最后计算出$B_{\text{地}} = 2.940\times 10^{-5}\text{T}$，$\tan\theta = 1.682$，$\theta = 59^{\circ} $。
 
 \section{思考题}
 \subsection{$^{87}$Rb的基态$F=1$与$F=2$的塞曼子能级排列相反，$^{85}$Rb的基态$F=2$与$F=3$的塞曼子能及排列也相反，是何原因？}
-\subsection{测量$g_F$值时，将水平换向得到的频率为$\nu = \frac{\nu_1+\nu_2}{2}$，为什么不是$\nu = \frac{\nu_1-\nu_2}{2}$？必须满足的条件是什么？测地磁场水平分量时，得到的频率为什么是$\nu = \frac{\nu_1-\nu_3}{2}$？相应的条件又是什么？}
-\subsection{为什么实验要在抵消地磁场垂直分量的状态下进行？}
-\subsection{扫场在实验中的作用是什么？}
-\subsection{为什么射频磁场必须在竖直方向，跟产生塞曼子能级的稳定弱磁场相垂直？}
-\subsection{如果射频信号频率是相邻塞曼子能级间隔的两倍，能否产生由$m_F = +2$到$m_F = 0$的磁共振？为什么？}
+对于$^{87}$Rb而言，I=3/2，J=1/2，则F可以等于1或2，将两个取值代入式\ref{eq3}，分别计算得到$g_F = -\frac{1}{4}g_J$和$g_F = \frac{1}{4}g_J$。因此，$^{87}$Rb的$F=1$与$F=2$的能级排列相反。
 
+对于$^{85}$Rb而言，I=5/2，J=1/2，则F可以等于2或3，将两个取值代入式\ref{eq3}，分别计算得到$g_F = -\frac{1}{6}g_J$和$g_F = \frac{1}{6}g_J$。因此，$^{85}$Rb的$F=2$与$F=3$的能级排列相反。
+\subsection{测量$g_F$值时，将水平换向得到的频率为$\nu = \frac{\nu_1+\nu_2}{2}$，为什么不是$\nu = \frac{\nu_1-\nu_2}{2}$？必须满足的条件是什么？测地磁场水平分量时，得到的频率为什么是$\nu = \frac{\nu_1-\nu_3}{2}$？相应的条件又是什么？}
+在以下的讨论中，我们统一取$\nu > 0$的方向为正方向。具体的公式可以参见理论部分。
+
+第一个实验中，$B_\text{恒场}$远远大于$B_\text{扫场}$和$B_\text{地磁场}$，故对$B_\text{恒场}$换向，等效于同时对$B_\text{扫场}$和$B_\text{地磁场}$换向，想要得到$B_\text{恒场}$，需要做加法。
+
+第二个实验中，$B_\text{地磁场}$远远小于$B_\text{恒场}$和$B_\text{扫场}$，故对$B_\text{恒场}$和$B_\text{扫场}$换向，等效于对$B_\text{地磁场}$换向，想要得到$B_\text{地磁场}$，需要做减法。
+\subsection{为什么实验要在抵消地磁场垂直分量的状态下进行？}
+地磁场的垂直分量也会对原子的能级分裂产生贡献。抵消地磁场垂直分量后，量子力学中的z方向则被确定为轴线方向。
+\subsection{扫场在实验中的作用是什么？}
+让光抽运现象在时间上具有周期性，便于寻找共振的频率。
+\subsection{为什么射频磁场必须在竖直方向，跟产生塞曼子能级的稳定弱磁场相垂直？}
+射频场可以破坏光抽运导致的偏激化状态，使原子的状态保持均匀分布，以便持续的发生共振现象。
+\subsection{如果射频信号频率是相邻塞曼子能级间隔的两倍，能否产生由$m_F = +2$到$m_F = 0$的磁共振？为什么？}
+不能，光子和电子作用时。电子需要满足角动量守恒，故选择定则只能是$\Delta m_F = \pm 1$。
 
 \section{附录}
 \subsection{亥姆霍兹线圈轴中心处磁感应强度B的计算公式}
 教材上给出了高斯单位制下$H$的表达式如下：
 \begin{equation}
-H = \cdot \frac{16\pi}{5^{\frac{3}{2}}}\cdot \frac{N}{r}\cdot I\times 10^{-3}\text{T}\label{eq9}
+H = \frac{16\pi}{5^{\frac{3}{2}}}\cdot \frac{N}{r}\cdot I\times 10^{-3} \text{T}\label{eq9}
 \end{equation}
 
 从高斯单位制的$H$到国际单位制的$B$，公式应该做如下变形：
 \begin{equation}
-B = \cdot \frac{16\pi}{5^{\frac{3}{2}}}\cdot \frac{N}{r}\cdot I\times 10^{-7}\text{T}\label{eq10}
+B = \frac{16\pi}{5^{\frac{3}{2}}}\cdot \frac{N}{r}\cdot I\times 10^{-7} \text{T}\label{eq10}
 \end{equation}
 
 式中：N为线圈每边匝数；r为线圈有效半径(m)；I为线圈上加的直流电流(A)。其中各线圈的N，r，I等参数实验室已给出。
@@ -198,7 +231,7 @@ B = \cdot \frac{16\pi}{5^{\frac{3}{2}}}\cdot \frac{N}{r}\cdot I\times 10^{-7}\te
     \subfloat[第一次磁共振]{\includegraphics[width=0.5\textwidth]{img/++1.jpg}}
     \hfill
     \subfloat[第二次磁共振]{\includegraphics[width=0.5\textwidth]{img/++2.jpg}}
-    \caption{++组}
+    \caption{＋＋组}
     \label{fig:subfig_1}
 \end{figure}
 \begin{figure}[htbp]
@@ -206,7 +239,7 @@ B = \cdot \frac{16\pi}{5^{\frac{3}{2}}}\cdot \frac{N}{r}\cdot I\times 10^{-7}\te
     \subfloat[第一次磁共振]{\includegraphics[width=0.5\textwidth]{img/-+1.jpg}}
     \hfill
     \subfloat[第二次磁共振]{\includegraphics[width=0.5\textwidth]{img/-+2.jpg}}
-    \caption{-+组}
+    \caption{－＋组}
     \label{fig:subfig_2}
 \end{figure}
 \begin{figure}[htbp]
@@ -214,7 +247,7 @@ B = \cdot \frac{16\pi}{5^{\frac{3}{2}}}\cdot \frac{N}{r}\cdot I\times 10^{-7}\te
     \subfloat[第一次磁共振]{\includegraphics[width=0.5\textwidth]{img/--1.jpg}}
     \hfill
     \subfloat[第二次磁共振]{\includegraphics[width=0.5\textwidth]{img/--2.jpg}}
-    \caption{--组}
+    \caption{－－组}
     \label{fig:subfig_3}
 \end{figure}
 \nocite{jiaocai}
