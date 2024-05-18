@@ -23,8 +23,8 @@
 }
 \geometry{left=2.5cm,right=2.5cm,bottom=2.5cm,top=2.5cm}
 \title{近代物理实验报告10.5：原子力显微镜}
-\author{\quad 学号\quad 匡亚明学院}
-\date{2019年3月29日}
+\author{林杨\quad 211840092\quad 物理学院}
+\date{2024年5月17日}
 \begin{document}
 \maketitle
 
@@ -132,45 +132,53 @@ AFM可以在真空、超高真空、气体、溶液、电化学环境、常温�
 \end{enumerate}
 
 \section{实验数据}
-\subsection{光栅}
-\paragraph{粗糙度指标}~\\
+\subsection{厚样品}
+图\ref{fig6}, \ref{fig7}, \ref{fig8}分别是厚样品的扫描结果，3D显示图和傅里叶变换图。观察发现，厚样品具有明显的周期性结构。在二维傅里叶变换图中，选择1:8的放大率以更好的发现频率峰值。找到频率峰值所对应的X周期、Y周期、R周期分别是3750nm、2500nm和2000nm。
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{data/0/hengxl000C.png}\\
+\caption{扫描结果}\label{fig6}
+\end{figure}
 
-\begin{table}[H]
-	\begin{tabular}{lc}
-		\hline
-		轮廓算数平均偏差(Arithmetical mean deviation): & $  $\\
-		
-		轮廓根均方偏差(Root mean square deviation): & $  $\\
-		
-		轮廓最大高度(Maximum height, or peak-peak): & $  $\\
-		
-		微观不平度十点高度(Ten point height of irregularities): & $  $\\
-		
-		表面偏度(Suface skewness): & $  $\\
-		
-		表面峰度(Surface kurtosis): & $  $\\
-		
-		平均峰点曲率(Mean summit curvature): & $  $\\
-		
-		根均方斜率(Root mean square slope):  & $  $\\
-		\hline
-	\end{tabular}
-	\caption{光栅粗糙度指标}
-\end{table}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{data/0/hengxl0003D.png}\\
+\caption{3D显示}\label{fig7}
+\end{figure}
 
-\subsection{金箔}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{data/0/hengxl000_FFT.png}\\
+\caption{傅里叶变换图}\label{fig8}
+\end{figure}
 
-...
-
-
-\section{误差分析}
+\subsection{薄样品}
+图\ref{fig9}是薄样品的扫描结果和粗糙程度分析，其中比较重要的信息有以下几点。
+\begin{enumerate}
+	\item 样品的极差约为7nm，但平均高度只有0.7nm，说明样品整体高度较低。
+	\item 样品的均方根为1.04nm，说明样品的粗糙起伏程度不大。
+\end{enumerate}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{data/1/hengxl001_ROU.png}\\
+\caption{扫描结果和粗糙程度分析}\label{fig9}
+\end{figure}
 
 \section{思考题}
-\subsection*{AFM探测到的原子力的由哪两种主要成分组成？}
-\subsection*{怎样使用AFM和CCD光学显微镜，才能较好的保护探针？}
-\subsection*{原子力显微镜有哪些应用？}
-\subsection*{与传统的光学显微镜，电子显微镜相比，扫描探针显微镜的分辨本领主要受什么限制？}
-\subsection*{要对悬臂的弯曲量进行精确测量，除了在AFM中使用光杠杆这个方法外，还有哪些方法可以达到相同数量级的测量精度？}
+\subsection{AFM探测到的原子力的由哪两种主要成分组成？}
+原子之间的Van de Waals相互作用，表现为吸引力；相近原子之间电子云的相互作用，表现为排斥力。
+\subsection{怎样使用AFM和CCD光学显微镜，才能较好的保护探针？}
+\begin{enumerate}
+	\item 在移动探头和底座时需注意轻拿轻放；
+	\item 在放置样品前要注意探针的位置，如果探针位置太深应提前退针；
+	\item 测量完毕后应及时退针，以免原子力持续作用在探针上。
+\end{enumerate}
+\subsection{原子力显微镜有哪些应用？}
+原子力显微镜可以克服传统光学显微镜的分辨率限制，精细地扫描材料表面，获得材料表面形貌、粗糙结构等信息，这对研究表面材料、二维材料等都有很大的意义。
+\subsection{与传统的光学显微镜，电子显微镜相比，扫描探针显微镜的分辨本领主要受什么限制？}
+主要受探针的尺寸，探针的材料限制。也与移动探针的电机灵敏度有关。
+\subsection{要对悬臂的弯曲量进行精确测量，除了在AFM中使用光杠杆这个方法外，还有哪些方法可以达到相同数量级的测量精度？}
+在STM显微镜中，为了测量悬臂的弯曲量，运用了量子隧穿效应。根据隧穿电流的大小确定悬臂的弯曲量。
 
 \nocite{jiaocai}
 \bibliography{ref}
