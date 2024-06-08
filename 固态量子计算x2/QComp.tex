@@ -22,8 +22,8 @@
 
 
 \title{近代物理实验报告：单电子固态量子计算}
-\author{\quad 学号\quad 匡亚明学院}
-\date{2019年2月29日}
+\author{林杨\quad 211840092\quad 物理学院}
+\date{2024年6月1日}
 \begin{document}
 \maketitle
 \bibliographystyle{unsrt}
@@ -523,15 +523,86 @@ D-J 算法的实验序列如图(\ref{fig:dj})所示。我们将量子比特和�
 	\item 通过图像上的回波方向，判断$ f (x)  $是常函数，还是平衡函数。
 \end{enumerate}
 
-
-
-
-
 \section{实验数据}
 
+\subsection{连续波实验}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{data/1/1.JPG}
+	\caption{连续波实验结果与拟合}
+	\label{fig:s11}
+\end{figure}
+连续波实验的结果与拟合见图\ref{fig:s11}。根据拟合结果，从$\ket{0}$态跃迁到$\ket{-1}$态和从$\ket{0}$态跃迁到$\ket{1}$态所对应的两个波峰分别位于2856MHz和2884MHz处，在2856MHz附近的曲线拟合程度较好，故选用此频率进行拉比振荡实验。
+
+\subsection{拉比振荡实验}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{data/2/1.JPG}
+	\caption{拉比振荡实验结果}
+	\label{fig:s21}
+\end{figure}
+拉比振荡实验的结果与拟合见图\ref{fig:s21}。根据拟合结果计算，2856MHz所对应的$\pi/2$脉冲、$\pi$脉冲和$2\pi$脉冲的宽度分别应该为112.60ns、242.00ns和500.79ns
+
+\subsection{自旋回波实验}
+将拉比震荡实验得到的脉冲宽度输入软件，进行自旋回波实验。自旋回波实验的结果见图\ref{fig:s31}，
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{data/3/1.JPG}
+	\caption{自旋回波实验参数和结果}
+	\label{fig:s31}
+\end{figure}
+
+\subsection{T2实验}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{data/4/1.JPG}
+	\caption{T2实验结果}
+	\label{fig:s41}
+\end{figure}
+T2实验的结果与拟合见图\ref{fig:s41}，拟合得到的T2=15377ns，符合实验要求。
+
+\subsection{D-J实验}
+DJ实验的参数如下：
+
+微波通道1：功率3dBm, 频率2884MHz, $\pi$脉冲宽度 196ns, 2$\pi$脉冲宽度405ns, $\pi$/2 脉冲宽度92ns, 回波时间 1000ns。微波通道2：功率3dBm，频率2856MHz, 2$\pi$脉冲宽度 500.79ns。DJ实验的结果见图\ref{fig:s51}。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{data/DJ/DjExperiment_2024-06-07-19-36-17.jpeg}
+	\caption{D-J实验结果}
+	\label{fig:s51}
+\end{figure}
+\subsection{自由实验}
+两个自由实验的结果与拟合依次如图\ref{fig:s61}-\ref{fig:s64}所示。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.4\linewidth]{data/free/Free -2024-06-07-19-09-51.jpeg}
+	\caption{自由实验1结果}
+	\label{fig:s61}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.4\linewidth]{data/free/1.JPG}
+	\caption{自由实验1拟合}
+	\label{fig:s62}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.4\linewidth]{data/free/Free -2024-06-07-19-23-34.jpeg}
+	\caption{自由实验2结果}
+	\label{fig:s63}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.4\linewidth]{data/free/2.JPG}
+	\caption{自由实验2拟合}
+	\label{fig:s64}
+\end{figure}
 
 \section{思考题}
-\subsection*{请利用布洛赫球表示以下量子态:}
+\subsection*{1、请利用布洛赫球表示以下量子态:}
 \begin{enumerate}
 	\item $ \ket{\psi} = \dfrac{\ket{0} + \ket{1}}{\sqrt{2}} $
 	\item $ \ket{\psi} = \dfrac{\ket{0} - \ket{1}}{\sqrt{2}} $
@@ -539,13 +610,13 @@ D-J 算法的实验序列如图(\ref{fig:dj})所示。我们将量子比特和�
 	\item $ \ket{\psi} = \dfrac{\ket{0} - \I\ket{1}}{\sqrt{2}} $
 \end{enumerate}
 
+答：不便画图，文字说明。以上4个量子态均位于布洛赫球中央平面上，不同之处在于$\varphi $角不同，他们的$\varphi $角分别为0°，180°，90°，270°
+\subsection*{2、如果实验中施加的微波频率$ f $与共振频率$ f_0 $有偏差，即$ f = f_0 + \delta f $，拉比振荡的频率会如何变化？}
+答：根据量子力学的计算，拉比震荡的频率满足以下关系$$\varOmega_r = \sqrt{(\frac{\mu E_0}{\hbar})^{2}+(\bar{\omega}-\omega)^{2}}$$
 
-\subsection*{如果实验中施加的微波频率$ f $与共振频率$ f_0 $有偏差，即$ f = f_0 + \delta f $，拉比振荡的频率会如何变化？}
-
-\subsection*{拉比振荡频率与微波功率的关系是什么？}
-
-\subsection*{参照$ n=1 $的特殊情况，即图1.5所示的量子线路图，画出一般情况的D-J算法量子线路图，并解释算法原理}
-
+其中，$E_0$为微波的振幅，$\bar{\omega}$和$\omega$分别是能级差所对应的频率和微波的频率。这样，当频率产生偏差时，拉比振荡的频率会变大。
+\subsection*{3、拉比振荡频率与微波功率的关系是什么？}
+答：利用上题的公式，当频率匹配时，拉比振荡的频率与外加电场的振幅成正比。故拉比振荡频率与微波功率的关系为$$\varOmega_r \propto \sqrt{P}$$
 
 %\nocite{jiaocai}
 \bibliography{ref}
