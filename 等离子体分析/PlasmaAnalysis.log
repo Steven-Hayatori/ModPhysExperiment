@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.18)  23 SEP 2024 21:22
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.18)  26 SEP 2024 21:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -457,14 +457,21 @@ File: fig/fig5.pdf Graphic file (type pdf)
  [5]
 File: fig/fig6.pdf Graphic file (type pdf)
 <use fig/fig6.pdf>
- (./PlasmaAnalysis.bbl [6]) [7] (./PlasmaAnalysis.aux) ) 
+File: data/Figure_1.png Graphic file (type bmp)
+<data/Figure_1.png>
+ [6]
+File: data/Figure_2.png Graphic file (type bmp)
+<data/Figure_2.png>
+File: data/Figure_1_2.png Graphic file (type bmp)
+<data/Figure_1_2.png>
+ [7] (./PlasmaAnalysis.bbl) [8] (./PlasmaAnalysis.aux) ) 
 Here is how much of TeX's memory you used:
- 8790 strings out of 476683
- 232746 string characters out of 5801401
+ 8843 strings out of 476683
+ 234881 string characters out of 5801401
  1863012 words of memory out of 5000000
- 28897 multiletter control sequences out of 15000+600000
+ 28945 multiletter control sequences out of 15000+600000
  521677 words of font info for 97 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,9n,97p,370b,334s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on PlasmaAnalysis.pdf (7 pages).
+Output written on PlasmaAnalysis.pdf (8 pages).

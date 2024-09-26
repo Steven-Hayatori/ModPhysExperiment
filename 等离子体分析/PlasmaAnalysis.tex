@@ -206,14 +206,49 @@ E_L = \cfrac{U_1 - U_2}{l}\label{eq12}
 双探针法实验方法与单探针法相同。值得注意的是双探针法探针电流比单探针小两个数量级，故要选择合适的仪表量程。
 
 \section{实验数据}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\textwidth]{data/Figure_1.png}\\
+\caption{单探针法数据}\label{fig7}
+\end{figure}
 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\textwidth]{data/Figure_2.png}\\
+\caption{双探针法数据}\label{fig8}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\textwidth]{data/Figure_1_2.png}\\
+\caption{单探针法半对数图}\label{fig9}
+\end{figure}
+将单探针法和双探针法得到的数据绘图，分别得到图\ref{fig7} 和图\ref{fig8}。下面将对两种方法得到的数据分别进行从处理，得到电子温度$T_{e}$和电子密度$n_{e}$。
+
+处理单探针法得到的数据，作半对数图，得到图\ref{fig9}。计算得到$\tan\phi=0.8452$，$T_{e}=13724K$，在$10^{4}$量级。
+为了求等离子区的电子密度，计算得到需要的$I_0=1234.9  \mu A$，$S=1.257\times 10^{-7}m^{2}$，计算得到电子密度$n_{e}=3.37\times 10^{17} m^{-3}$。
+
+处理双探针法得到的数据，$I_{s1}$和$I_{s2}$分别为$292\mu A$和$218\mu A$，计算得到$T_{e}=43198K$，在$10^{4}$量级。计算得到电子密度$n_{e}=7.23\times 10^{18} m^{-3}$。
 \section{误差分析}
-
+单探针法和双探针法中都有来自于探针非理想形状和等离子体不稳定特点的偶然误差。双探针法和单探针法相比，克服了来自于等离子体自身电势差的系统误差。
 \section{思考题}
 \subsection{气体放电中的等离子体有什么特征？}
+\begin{itemize}
+    \item 高度电离，是电和热的良导体，具有比普通气体大几百倍的比热容；
+    \item 带正电的和带负电的粒子密度几乎相等；
+    \item 宏观上是电中性的。
+\end{itemize}
 \subsection{等离子体有哪些主要的参量？}
+\begin{itemize}
+    \item 电子温度$T_{e}$
+    \item 带电粒子密度（电子密度/离子实密度）n
+\end{itemize}
 \subsection{探针法对探针有什么要求？}
-
+\begin{itemize}
+    \item 能够承受等离子管内的高温；
+    \item 具有化学惰性，不与等离子管内物质反应；
+    \item 对等离子体的干扰小。
+\end{itemize}
 \nocite{jiaocai}
 \bibliography{ref}
 \end{document}
