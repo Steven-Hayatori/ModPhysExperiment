@@ -131,75 +131,64 @@
 \end{enumerate}
 
 \section{实验数据}
-实验测得的数据记录在表(\ref{data:table})中：
-\begin{table}[!h]
+实验测得的数据记录在表\ref{data:table}中。将表\ref{data:table}用电脑画图，得到图\ref{data:fig1}，计算斜率得到图\ref{data:fig2}。
+\begin{table}[!ht]
     \centering
-    \iffalse
-    \begin{tabular}{|c|c|c|c|c|c|c|c|}
-        \hline
-        T / $^{\circ}$C & $M_s$ / V & T / $^{\circ}$C & $M_s$ / V & T / $^{\circ}$C & $M_s$ / V & T / $^{\circ}$C & $M_s$ / V \\ \hline
-        19.5            & 1.43      & 24.0            & 1.02      & 28.5            & 0.43      & 33.0            & 0.15      \\ \hline
-        20.0            & 1.38      & 24.5            & 0.95      & 29.0            & 0.38      & 33.5            & 0.13      \\ \hline
-        20.5            & 1.33      & 25.0            & 0.86      & 29.5            & 0.33      & 34.0            & 0.12      \\ \hline
-        21.0            & 1.31      & 25.5            & 0.82      & 30.0            & 0.28      & 34.5            & 0.11      \\ \hline
-        21.5            & 1.27      & 26.0            & 0.73      & 30.5            & 0.25      & 35.0            & 0.09      \\ \hline
-        22.0            & 1.25      & 26.5            & 0.65      & 31.0            & 0.22      & 35.5            & 0.08      \\ \hline
-        22.5            & 1.17      & 27.0            & 0.59      & 31.5            & 0.21      & 36.0            & 0.06      \\ \hline
-        23.0            & 1.13      & 27.5            & 0.53      & 32.0            & 0.20      & 36.5            & 0.06      \\ \hline
-        23.5            & 1.08      & 28.0            & 0.46      & 32.5            & 0.16      & 37.0            & 0.05      \\ \hline
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+        摄氏度 & 振幅 & 摄氏度 & 振幅 \\ \hline
+        22.5 & 1.49 & 31.0 & 0.63 \\ \hline
+        23.0 & 1.48 & 31.5 & 0.57 \\ \hline
+        23.5 & 1.48 & 32.0 & 0.50 \\ \hline
+        24.0 & 1.45 & 32.5 & 0.44 \\ \hline
+        24.5 & 1.40 & 33.0 & 0.40 \\ \hline
+        25.0 & 1.38 & 33.5 & 0.35 \\ \hline
+        25.5 & 1.32 & 34.0 & 0.32 \\ \hline
+        26.0 & 1.30 & 34.5 & 0.28 \\ \hline
+        26.5 & 1.24 & 35.0 & 0.26 \\ \hline
+        27.0 & 1.17 & 35.5 & 0.23 \\ \hline
+        27.5 & 1.12 & 36.0 & 0.21 \\ \hline
+        28.0 & 1.06 & 36.5 & 0.20 \\ \hline
+        28.5 & 1.00 & 37.0 & 0.18 \\ \hline
+        29.0 & 0.92 & 37.5 & 0.16 \\ \hline
+        29.5 & 0.87 & 38.0 & 0.15 \\ \hline
+        30.0 & 0.79 & 38.5 & 0.14 \\ \hline
+        30.5 & 0.71 & 39.0 & 0.12 \\ \hline
+        31.0 & 0.63 & 39.5 & 0.11 \\ \hline
+        31.5 & 0.57 & 40.0 & 0.10 \\ \hline
     \end{tabular}
-    \fi
-    \caption{实验数据}\label{data:table}
+    \caption{温度与振幅数据}
+    \label{data:table}
 \end{table}
 
-将表中数据和对数据的差分绘制在坐标轴中，采用样条插值(see comment) %注：应该用移动平均法(wiki: Moving Average)(thanks to: WilliamXu)
-的方式对差分数据进行拟合，寻找原始数据斜率最大、即差分极小值点对应的温度，即为该材料的居里温度，如图(\ref{data:fig})所示。
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{fig/data.pdf}
-\caption{$M_s - T$及差分数据图像}\label{data:fig}
+\includegraphics[width=\textwidth]{data/Figure_1.png}
+\caption{振幅与温度关系图}
+\label{data:fig1}
+
 \end{figure}
-
-从图(\ref{data:fig})可以得知，实验测得的该物质的居里温度$T_C\doteq 26.14 ^{\circ}$C。
-
-\section{实验讨论}
-\iffalse
-对于铁磁转变为顺磁性的物质在顺磁时应满足如下的居里定律：
-\begin{eqnarray*}
-    \chi_m &=& \frac{C}{T-T_c}\\
-    M &=& (1+\chi_m)H
-\end{eqnarray*}
-结合两个式子，有：
-\begin{equation*}
-    M = \left(1+\frac{C}{T-T_c}\right)H
-\end{equation*}
-化简式子，因为M与U成比例，将常数表示为A、B，得到：
-\begin{equation*}
-    U = A + \frac{B}{T-T_c}
-\end{equation*}
-用所得数据中T$>\text{T}_c$的部分作出U与$\frac{1}{T-T_c}$的函数图像，如下图：
-\begin{figure}[!h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{fig/discussion.pdf}
-\caption{$\frac{1}{T-T_C} - U$图像}\label{discussion}
+\includegraphics[width=\textwidth]{data/Figure_2.png}
+\caption{斜率与温度关系图}
+\label{data:fig2}
 \end{figure}
 
-从图中可以看出，当U较小时，U与$\frac{1}{T-T_c}$成线性关系，H不为零。当U较大时，线性关系发生变化。猜测有两个原因，其一是U变大时，补偿线圈和探测线圈的差值逐渐变大，到时H发生变化从而改变线性关系。其二是当材料越过所标定的居里温度点时，材料并没有完全转变为顺磁材料，还保有一定的铁磁性。
-\fi
+从图(\ref{data:fig2})可以得知，实验测得的该物质的居里温度$T_C\doteq 30.00 ^{\circ}$C。
 
 \section{误差分析}
-\iffalse
 \begin{enumerate}
-    \item 实验仪器的系统误差，由于实验仪器的精确度有所限制，所以会对实验结果产生一定的误差。
-    \item 探测线圈和补偿线圈实际上并不能完全抵消。
-    \item 实验中为了消除流体边界层的影响加入了搅拌来使样品均匀升温，但实验中观察到搅拌棒会引起大量气泡，实际上影响了样品表面温度。
-    \item 拟合曲线时的误差。我们注意到使用不同的拟合方法得到的结果也不完全相同。
+    \item 系统误差：实验设备和方法比较传统，测量精确度有限。
+    \item 系统误差：实验时应缓慢升温，使系统处于稳定平衡态。实际操作中为了简化，升温速度不够缓慢。
+    \item 系统误差：计算斜率时选用不同的方法，得到的斜率最大的位置不同。
 \end{enumerate}
-\fi
 
 \section{思考题}
 \subsection*{如果探测线圈A和补偿线圈B在绕制时不完全相同，会对测到得$M_s - T$曲线以及$T_c$产生什么影响？}
+如果两个线圈不完全相同，那么探测线圈中的感应电动势将不仅由材料内部磁化强度的变化产生，而包括了由外加磁场的变化而产生的感应电动势。由于测量时，已经对余弦变化的电动势取了平均，而H和M的振动频率是一致的。因此，所测得的振幅相对于线圈相同时的振幅，加上了一个常数，这对于斜率的计算没有影响。
 
+即，得到的曲线会整体向上平移，而$T_{c}$不受影响
 \nocite{jiaocai}
 \bibliography{ref}
 \end{document}
