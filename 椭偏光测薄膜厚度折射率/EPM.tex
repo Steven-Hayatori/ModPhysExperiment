@@ -126,22 +126,23 @@ $$|E_{ip}/E_{is}|=1,\beta_{ip}-\beta_{is}=2P-\pi/2.$$
 \begin{tabular}{|c|c|c|c|c|}
 \hline
 膜厚(nm)         & 折射率n             & MSE            & 波长(nm)           & 入射角(deg) \\ \hline
-102.55         & 1.4601           & 3.67$\times 10^{-3}$      & 632.8            & 69.89    \\ \hline
+97.23         & 1.5028           & 3.32$\times 10^{-3}$      & 632.8            & 69.89    \\ \hline
 $\Phi$exp(deg) & $\Delta$exp(deg) & $\Phi$mod(deg) & $\Delta$mod(deg) &          \\ \hline
-42.701         & 80.074           & 42.6978        & 80.0758          &          \\ \hline
+41.991         & 76.320           & 41.9919        & 76.3232	          &          \\ \hline
 \end{tabular}
 \end{table}
 
-\section{实验讨论}
-\iffalse
-\subsection{薄膜厚度}
-我们测得的薄膜厚度为102.55nm，相比其他实验者的数据略为偏大。我们考虑的可能原因是我们用手取出样品，手上的油污沾染了样品表面，使得测得厚度变大。
-\fi
 
 \section{思考题}
 \subsection{椭偏参数$\Psi$,$\Delta$的物理含义是什么？消光时，它们与起偏器、检偏器方位角$P$,$A$之间由什么样的表达式？}
+消光时，我们已经通过调节仪器简化了$\Delta$，$\Delta = 270 - 2P$。而$\tan\varPsi = (\frac{I_p}{I_s})_{r}$，也就是分母为1，直接反映检偏器的方位角。故$\varPsi =\left\lvert A \right\rvert$ 。
 \subsection{椭偏测量中，若被测量薄膜厚度超过一个周期，试提出确定周期数的其他方法。}
+
 \subsection{试分析本实验测量中系统误差的来源。}
+\begin{itemize}
+    \item 实验通过进步长的方式寻找消光点，根据步长选择的不同，确定消光点的位置会发生变化。步长选择的越小，消光点的位置确定的越准确。
+    \item 实验中薄膜的状态不佳。实验时观察到薄膜的表面有明显的指纹印，这会影响激光在膜表面的反射和折射。
+\end{itemize}
 
 \nocite{jiaocai}
 \bibliography{ref}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.18)  25 OCT 2024 09:30
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.18)  31 OCT 2024 20:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -475,7 +475,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./EPM.bbl [4]) [5] (./EPM.aux) ) 
+[4] (./EPM.bbl) [5] (./EPM.aux) ) 
 Here is how much of TeX's memory you used:
  8998 strings out of 476683
  236970 string characters out of 5801401
