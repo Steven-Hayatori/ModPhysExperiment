@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.18)  14 NOV 2024 23:07
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.18)  14 NOV 2024 20:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**swfx
-(./swfx.tex
+**HAS
+(./HAS.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (c:/Program Files/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -321,8 +321,8 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen193
 \Gm@layoutvoffset=\dimen194
 \Gm@dimlist=\toks24
-) (./swfx.aux)
-\openout1 = `swfx.aux'.
+) (./HAS.aux)
+\openout1 = `HAS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -438,30 +438,36 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
  (c:/Program Files/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-File: fig/2port.jpg Graphic file (type bmp)
-<fig/2port.jpg>
- [1
+) [1
 
-] [2] [3] [4]
-File: data/img1.png Graphic file (type bmp)
-<data/img1.png>
-File: data/img2.png Graphic file (type bmp)
-<data/img2.png>
-File: data/img3.png Graphic file (type bmp)
-<data/img3.png>
-
+] [2]
+File: fig/fitting1nm.pdf Graphic file (type pdf)
+<use fig/fitting1nm.pdf>
+File: fig/fitting05nm.pdf Graphic file (type pdf)
+<use fig/fitting05nm.pdf>
+File: fig/fitting01nm.pdf Graphic file (type pdf)
+<use fig/fitting01nm.pdf>
+ [3]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./swfx.bbl) [5] [6] (./swfx.aux) ) 
-Here is how much of TeX's memory you used:
- 8792 strings out of 476683
- 234662 string characters out of 5801401
- 1870012 words of memory out of 5000000
- 28905 multiletter control sequences out of 15000+600000
- 521629 words of font info for 91 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 89i,10n,97p,506b,274s stack positions out of 10000i,1000n,20000p,200000b,200000s
+[4]
 
-Output written on swfx.pdf (6 pages).
+LaTeX Warning: Citation `jiaocai' undefined on input line 225.
+
+No file HAS.bbl.
+[5] [6] (./HAS.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 8719 strings out of 476683
+ 230382 string characters out of 5801401
+ 1864012 words of memory out of 5000000
+ 28837 multiletter control sequences out of 15000+600000
+ 521645 words of font info for 93 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 89i,11n,97p,359b,413s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on HAS.pdf (6 pages).
