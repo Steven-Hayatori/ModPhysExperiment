@@ -119,11 +119,11 @@ $\Delta \lambda_1$(mm) & 0.181        & 0.136       & 0.121        & 0.116      
 \label{table_1nm}
 \begin{tabular}{|c|c|c|}
 \hline
-$\lambda$(nm) & y value & 真空中的波长$\lambda$(nm) \\ \hline
-658           & 20017   & 658.116 \\ \hline
-488           & 4484    & 488.121 \\ \hline
-436           & 1012    & 436.136 \\ \hline
-412           & 272     & 412.181 \\ \hline
+峰的顺序    &  $\lambda$(nm)  & 真空中的波长$\lambda$(nm) \\ \hline
+1   & 410            & 410.181 \\ \hline
+2   & 434              & 434.136 \\ \hline
+3   & 486             & 486.121 \\ \hline
+4   & 657              & 657.116 \\ \hline
 \end{tabular}
 \end{table}
 \item 0.5nm
@@ -133,11 +133,11 @@ $\lambda$(nm) & y value & 真空中的波长$\lambda$(nm) \\ \hline
 \label{table_05nm}
 \begin{tabular}{|c|c|c|}
 \hline
-$\lambda$(nm) & y value & 真空中的波长$\lambda$(nm) \\ \hline
-658.0           & 19640 & 658.116   \\ \hline
-488.0           & 4360  & 488.121   \\ \hline
-436.0           & 994   & 436.136  \\ \hline
-412.0           & 267   & 412.181   \\ \hline
+峰的顺序    &  $\lambda$(nm)  & 真空中的波长$\lambda$(nm) \\ \hline
+1   & 410.5            & 410.681 \\ \hline
+2   & 434.5             & 434.636 \\ \hline
+3   & 486.5             & 486.621 \\ \hline
+4   & 656.5              & 656.116 \\ \hline
 \end{tabular}
 \end{table}
 \item 0.1nm
@@ -147,81 +147,42 @@ $\lambda$(nm) & y value & 真空中的波长$\lambda$(nm) \\ \hline
 \label{table_01nm}
 \begin{tabular}{|c|c|c|}
 \hline
-$\lambda$(nm) & y value & 真空中的波长$\lambda$(nm) \\ \hline
-658.0           & 185   & 658.116  \\ \hline
-487.9           & 4179  & 488.021  \\ \hline
-435.8           & 953   & 435.936  \\ \hline
-412.2           & 260   & 412.381  \\ \hline
+峰的顺序    &  $\lambda$(nm)  & 真空中的波长$\lambda$(nm) \\ \hline
+1   & 410.5            & 410.681 \\ \hline
+2   & 434.4             & 434.536 \\ \hline
+3   & 486.4             & 486.521 \\ \hline
+4   & 656.7              & 656.316 \\ \hline
 \end{tabular}
 \end{table}
 \end{enumerate}
 \item 计算里德伯常量\\
-要计算里德伯常量，我们可以画出$(\frac{1}{2^2} - \frac{1}{n^2})$和$\frac{1}{\lambda}$关系图，并进行拟合，拟合曲线的斜率即为氢的里德伯常量$R_H$，再结合
-$R_{\infty} = R_H(1+\frac{m_e}{m_H}) \approx = R_{\infty}(1+\frac{1}{1836.152})$
-算出里德伯常量，分别标注在图(\ref{fitting1})、(\ref{fitting05})、(\ref{fitting01})中。
-\begin{figure}[!th]
-\centering
-\includegraphics[width=10cm]{fig/fitting1nm.pdf}\\
-\caption{1nm拟合曲线}\label{fitting1}
-\end{figure}
-\begin{figure}[!h]
-\centering
-\includegraphics[width=10cm]{fig/fitting05nm.pdf}\\
-\caption{0.5nm拟合曲线}\label{fitting05}
-\end{figure}
-\begin{figure}[!h]
-\centering
-\includegraphics[width=10cm]{fig/fitting01nm.pdf}\\
-\caption{0.1nm拟合曲线}\label{fitting01}
-\end{figure}
+将3个分度值下得到的数据取平均值，得到表\ref{table_ave}
+\begin{table}[!h]
+    \centering
+    \caption{平均谱线数据}
+    \label{table_ave}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    峰的顺序    & 对应的n  & 真空中的波长$\lambda$(nm) \\ \hline
+    1   & 6            & 410.514 \\ \hline
+    2   & 5             & 434.436 \\ \hline
+    3   & 4             & 486.421 \\ \hline
+    4   & 3       & 656.849 \\ \hline
+    \end{tabular}
+    \end{table}
 
-其误差分别为：
-\begin{eqnarray}
-Error(1nm) &=& \cfrac{10883890.41 - 10973731.57}{10973731.57}\times 100\% \approx -0.819\%\\
-Error(0.5nm) &=& \cfrac{10883890.41 - 10973731.57}{10973731.57}\times 100\% \approx -0.819\%\\
-Error(0.1nm) &=& \cfrac{10879494.35 - 10973731.57}{10973731.57}\times 100\% \approx -0.859\%
-\end{eqnarray}
-可见拟合的误差是比较大的，我们再用测量数据直接进行计算，可得：
-
-\begin{enumerate}
-\item 1nm\\
-$R_{\infty\alpha}$ = 10940320.55$\text{m}^{-1}$\\
-$R_{\infty\beta} = $10926252.57$\text{m}^{-1}$\\
-$R_{\infty\gamma}$ = 10918394.17$\text{m}^{-1}$\\
-$R_{\infty\delta}$ = 10917533.80$\text{m}^{-1}$,\\
-$<R_{\infty}>$ = 10925625.27$\text{m}^{-1}$\\
-Error(1nm) = $\cfrac{10925625.27 - 10973731.57}{10973731.57}\times 100\% \approx -0.44\%$
-\item 0.5nm\\
-$R_{\infty\alpha}$ = 10940320.55$\text{m}^{-1}$\\
-$R_{\infty\beta} = $10926252.57$\text{m}^{-1}$\\
-$R_{\infty\gamma}$ = 10918394.17$\text{m}^{-1}$\\
-$R_{\infty\delta}$ = 10917533.80$\text{m}^{-1}$,\\
-$<R_{\infty}>$ = 10925625.27$\text{m}^{-1}$\\
-Error(0.5nm) = $\cfrac{10925625.27 - 10973731.57}{10973731.57}\times 100\% \approx -0.44\%$
-\item 0.1nm\\
-$R_{\infty\alpha}$ = 10940320.55$\text{m}^{-1}$\\
-$R_{\infty\beta} = $10928491.46$\text{m}^{-1}$\\
-$R_{\infty\gamma}$ = 10923403.35$\text{m}^{-1}$\\
-$R_{\infty\delta}$ = 10912238.92$\text{m}^{-1}$,\\
-$<R_{\infty}>$ = 10926113.57$\text{m}^{-1}$\\
-Error(0.1nm) = $\cfrac{10926113.57 - 10973731.57}{10973731.57}\times 100\% \approx -0.43\%$
-\end{enumerate}
-\end{enumerate}
-
+计算得到的4个里德伯常数分别为：10961423.4017, 10964438.8983, 10961119.1566, 10961867.3176。计算平均值，得到实验计算的里德伯常量为10962212.1935，和标准的里德伯常数相比，相对误差为0.105$\%$
 \section{误差分析}
-\iffalse
 \begin{enumerate}
-\item 实验室有自然光干扰。\\
-在我们的实验过程中，观察到第一次实验时测量的谱线强度曲线通常不能观察到陡峭的峰值，而是一段较连续的平台，我们经研究推测是室内的环境光造成的影响。因为实验所测的氢原子光谱巴耳末线系的前四条谱线的波长均在可见光范围内，因此环境中的可见光可能对实验探测造成影响。为此，我们将探测器四周做好遮光，再次测量获得了非常理想的谱线强度曲线。
-\item 仪器调节中狭缝光路调节存在误差。\\
-第一次实验中我们还发现发光的氢灯管并没有对准探测器的接收窗口，因此也对测量造成了影响。后将氢灯管仔细调节，使接收窗口较为准确地与氢光灯相对，测量数据较好。但是因此我们也认为此装置在调节过程中还有可能存在调节不准的地方，造成误差。
+\item 狭缝未对准光源，使实验室的自然光对实验产生干扰。
 \end{enumerate}
-\fi
 
+\end{enumerate}
 \section{思考题}
 \subsection{氢光谱巴尔末线系的极限波长是多少?}
+n趋于无穷时，带入标准里德伯常数，得到$ \lambda_{lim} = 364.506nm$
 \subsection{谱线计算值具有唯一的波长，但实测谱线有一定宽度，其主要原因是什么? }
-
+量子力学中，能量和时间存在不确定性关系。实际测量时，总是在一定的时间内得到的平均值。故能量会有不确定性。
 \nocite{jiaocai}
 \bibliography{ref}
 \end{document}
