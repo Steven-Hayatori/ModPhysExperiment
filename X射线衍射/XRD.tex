@@ -17,7 +17,7 @@
 
 \title{近代物理实验报告5.2：X射线衍射物相分析}
 \author{林杨\quad 211840092\quad 物理学院}
-\date{2024年12月5日}
+\date{2024年12月19日}
 \begin{document}
 %\sloppy
 \maketitle
@@ -169,27 +169,34 @@ X射线波长与晶面间距相近，可以产生衍射。晶面间距d和X射�
 \end{enumerate}
 
 \section{实验数据}
+经过比对衍射谱，第一个样品为硅粉。第二个样品为$\mathrm{Fe_{2}O_{3}}$和$\mathrm{Cu_{2}O}$的混合物。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{data/图片2.png}
+	\caption{样品1的衍射峰和查表匹配}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{data/图片1.png}
+	\caption{样品2的衍射峰和查表匹配}
+\end{figure}
 
 \section{误差分析}
-
+\begin{itemize}
+	\item 样品表面不平整，可能导致衍射峰的位置出现偏差。
+	\item 样品在平铺的时候，如果表面取向是有选择性的，可能导致不同峰的强度比例出现偏差。
+\end{itemize}
 \section{思考题}
-% 书上：
-%\subsection*{定性物相分析的基本方法是什么？}
-%\subsection*{XD-3A X射线衍射仪由哪几部分组成？}
-%\subsection*{实验中怎样选择时间常数？}
-%\subsection*{简述物相分析的步骤。}
-%\subsection*{叙述物相定性分析的局限性？如何避免相分析的误判或漏判现象？}
-%
-% 讲义：
-\subsection*{X射线在晶体上产生衍射的条件是什么？}
-\subsection*{为什么实验中要首先开启冷却水？}
-\subsection*{实验中使用的样品的颗粒度有无要求？为什么？}
-\subsection*{X射线晶体衍射仪的测量精度影响最大的部分是什么？}
-
-\section{问答题}
 \subsection*{为什么衍射仪法记录的始终是平行于试样表面的晶面的衍射？}
+衍射需要满足布拉格反射公式。光源和接收器在遍历移动角度的时候已经默认了样品是水平的。
 \subsection*{不平行表面的晶面是否也有衍射产生？}
+一般来说是没有的，但是考虑到X射线会有散射，而狭缝是有宽度的。因此可能会有一些晶面产生干扰信号。
 \subsection*{用衍射仪如何区分单晶、多晶和非晶？}
+对于单晶样品，衍射图谱会出现几个特定的衍射峰。
+对于多晶样品，衍射图谱会出现更多的衍射峰。例如粉末样品对应的就是这种衍射。
+对于非晶样品，衍射图谱不会出现衍射峰。
 
 \nocite{jiaocai}
 \bibliography{ref}
